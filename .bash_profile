@@ -1,5 +1,5 @@
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Allows Git completitions
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -15,13 +15,16 @@ export PS1='____________________________________________________________________
 if [ -f ~/.git-prompt.sh ]; then
   source ~/.git-prompt.sh
   export GIT_PS1_SHOWDIRTYSTATE=1 # Show Whether the repository has pending changes
-  export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
+  export PS1='\[\033[01;32m\]tillegomezz\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 fi
 
 # some aliases, to make it funny
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias codes="cd ~/codes"
 alias tille="cd ~/codes/tille"
+alias bb="cd ~/Desktop/buscobanda"
+alias bex="bundle exec"
+alias ga="git add"
 
 # Reload shell with .bash_profile settings
 source ~/.profile
