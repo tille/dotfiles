@@ -1,1 +1,2 @@
-termcapinfo xterm* ti@:te@
+termcapinfo xterm* ti@:te@ # allow natural shell-scrolling
+defshell -bash      	   # login shell
