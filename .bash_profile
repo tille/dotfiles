@@ -14,7 +14,7 @@ export PS1='____________________________________________________________________
 # Showing the current git-branch
 if [ -f ~/.git-prompt.sh ]; then
   source ~/.git-prompt.sh
-  export GIT_PS1_SHOWDIRTYSTATE=1 # Show Whether the repository has pending changes
+  export GIT_PS1_SHOWDIRTYSTATE=1 # Show Whether the repository has pending changes or not
   export PS1='\[\033[01;32m\]tillegomezz\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 fi
 
