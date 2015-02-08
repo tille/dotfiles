@@ -15,15 +15,15 @@
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %cn)%Creset' --abbrev-commit --date=relative
         sub = submodule update
         unstage = reset HEAD
-        cim = commit -m
+        cm = commit -m
 [branch]
         autosetupmerge = true
         autosetuprebase = always
 [core]
         whitespace = trailing-space,space-before-tab
         filemode = false
-        editor=nano
-	excludesfile = /home/jbustos/.gitignore_global
+        editor = vim
+	excludesfile = /home/tille/.gitignore_global
 [rerere]
         enabled = 1
 [push]
@@ -38,5 +38,5 @@
         log = less
         show = less -r
 [user]
-	email = jbustos@altavistaed.com
+	email = tille100@gmail.com
 	name = Jorman Bustos
