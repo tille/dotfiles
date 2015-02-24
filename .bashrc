@@ -24,4 +24,3 @@ export LANGUAGE="en"
 export LC_ALL="en_US.UTF-8"
 export PATH="$PATH:~/.rvm/bin" 
 export NVM_DIR="/home/jbustos/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
