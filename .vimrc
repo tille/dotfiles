@@ -227,6 +227,7 @@ let g:airline#extensions#tabline#show_buffers = 1
 let g:bufferline_echo = 0
 " let g:airline_theme = 'solarized'
 let g:airline_section_c = ''
+let g:airline_powerline_fonts = 1
 
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 nmap <leader>1 <Plug>AirlineSelectTab1
