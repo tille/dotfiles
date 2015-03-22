@@ -1,4 +1,4 @@
-source ~/tilleDotfiles/.bash/colors 
+source ~/dotfiles/.bash/colors 
 
 git_prompt ()
 {
@@ -17,7 +17,7 @@ git_prompt ()
     echo " [$git_color$git_branch${c_reset}]"
 }
 
-PROMPT_COMMAND='PS1="${c_user}T!ll3-VM${c_reset}: ${c_path}\w ($(rvm-prompt))${c_reset}$(git_prompt) \$ "'
+PROMPT_COMMAND='PS1="${c_user}T!ll3${c_reset}: ${c_path}\w ($(rvm-prompt))${c_reset}$(git_prompt) \$ "'
 
 export PS2='________________________________________________________________________________\n|\033[1;35m \w \033[00m \033[1;36m\u \033[00m @ \033[1;36m\t \033[00m\033[1;31m  \033[00m\n=> '
 export PS3="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
