@@ -9,10 +9,10 @@ shopt -s histappend
 HISTSIZE=100000
 HISTFILESIZE=200000
 
-source ~/tilleDotfiles/.bash/aliases 
-source ~/tilleDotfiles/.bash/vhl
-source ~/tilleDotfiles/.bash/prompt
-source ~/tilleDotfiles/.bash/extras
+source ~/dotfiles/.bash/aliases 
+source ~/dotfiles/.bash/vhl
+source ~/dotfiles/.bash/prompt
+source ~/dotfiles/.bash/extras
 
 stty ixany
 stty ixoff -ixon
@@ -23,4 +23,4 @@ export EDITOR=vim
 export LANGUAGE="en"
 export LC_ALL="en_US.UTF-8"
 export PATH="$PATH:~/.rvm/bin" 
-export NVM_DIR="/home/jbustos/.nvm"
+export NVM_DIR="/home/$USER/.nvm"
