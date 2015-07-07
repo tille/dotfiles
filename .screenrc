@@ -29,3 +29,6 @@ termcapinfo xterm* ti@:te@
 
 # login shell 
 defshell -bash      	  
+
+# force screen to load in 256 colors
+term screen-256color

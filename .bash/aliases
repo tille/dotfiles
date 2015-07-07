@@ -26,3 +26,6 @@ alias aliases='vim ~/dotfiles/.bash/aliases'
 # xfce settings
 alias logout='xfce4-session-logout --logout'
 alias settings='xfce4-settings-manager'
+
+# enable 256-color for terminal multiplexers 
+alias screen='TERM=xterm-256color screen'
