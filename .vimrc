@@ -124,6 +124,7 @@ map <C-p> :cp<CR>
 
 "new tab
 map <C-t> <esc>:tabnew<CR>
+set tabstop=2
 
 " run a single ruby test:
 " map <Leader>o ?def <CR>:nohl<CR>w"zy$:!ruby -I"test" <C-r>% -n <C-r>z<CR>
