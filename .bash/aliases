@@ -28,4 +28,5 @@ alias logout='xfce4-session-logout --logout'
 alias settings='xfce4-settings-manager'
 
 # enable 256-color for terminal multiplexers 
+alias tmux='tmux -2'
 alias screen='TERM=xterm-256color screen'
