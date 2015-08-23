@@ -30,3 +30,5 @@ alias settings='xfce4-settings-manager'
 # enable 256-color for terminal multiplexers 
 alias tmux='tmux -2'
 alias screen='TERM=xterm-256color screen'
+
+alias hydra='ssh jbustos@38.111.26.116'
