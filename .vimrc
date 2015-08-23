@@ -126,6 +126,9 @@ map <C-p> :cp<CR>
 map <C-t> <esc>:tabnew<CR>
 set tabstop=2
 
+set tabstop=2
+set shiftwidth=2
+
 " run a single ruby test:
 " map <Leader>o ?def <CR>:nohl<CR>w"zy$:!ruby -I"test" <C-r>% -n <C-r>z<CR>
 map <Leader>o :.Rake<CR>
