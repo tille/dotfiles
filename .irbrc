@@ -10,5 +10,5 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 IRB.conf[:AUTO_INDENT] = true
 
-load File.dirname(__FILE__) + '/.railsrc' if $0 == 'script/rails'
-load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb'
+# load File.dirname(__FILE__) + '/.railsrc' if $0 == 'script/rails'
+# load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb'
