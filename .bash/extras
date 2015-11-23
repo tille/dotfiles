@@ -5,3 +5,8 @@ function swap()
     mv "$2" "$1"
     mv $TMPFILE "$2"
 }
+
+function c() 
+{
+    g++ "$1" && ./a.out < "$2"
+}
