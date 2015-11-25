@@ -6,7 +6,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Bundle 'gmarik/Vundle.vim'
+
+" templates
+Plugin 'aperezdc/vim-template'
  
 " my vundles
 " Bundle 'wincent/Command-T'
@@ -124,7 +127,6 @@ map <C-p> :cp<CR>
 
 "new tab
 map <C-t> <esc>:tabnew<CR>
-set tabstop=2
 
 set tabstop=2
 set shiftwidth=2
@@ -223,6 +225,7 @@ set t_Co=256
 " colorscheme solarized
 " colorscheme vibrantink
 colorscheme railscasts
+highlight Normal ctermfg=black ctermbg=white
 
 " let g:airline#extensions#bufferline#enabled = 1
 " let g:airline#extensions#tabline#buffer_nr_show = 1
