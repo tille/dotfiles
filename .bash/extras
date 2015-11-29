@@ -8,5 +8,9 @@ function swap()
 
 function c() 
 {
-    g++ "$1" && ./a.out < "$2"
+    if [ "$2" == '' ]; then
+      g++ "$1" && ./a.out;
+    else
+      g++ "$1" && ./a.out < "$2"
+    fi
 }
