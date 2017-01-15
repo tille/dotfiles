@@ -1,32 +1,29 @@
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
 fi
 
-alias l='ls -CF'
-alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
-alias lh='ls -lAhrt --color'
-
 export HISTTIMEFORMAT='%Y-%b-%d %a %H:%M:%S - '
 export PROMPT_COMMAND='history -a'
 
-alias gm='git commit -m'
-
-alias dspace='du -h --max-depth=1'
-alias dfree='df -h'
-
 alias rr='source ~/.bashrc'
-alias xx='xmodmap ~/.xmodmap'
-alias aliases='vim ~/dotfiles/.bash/aliases'
 
 # xfce settings
 alias logout='xfce4-session-logout --logout'
 alias settings='xfce4-settings-manager'
 
-# enable 256-color for terminal multiplexers 
+# enable 256-color for terminal multiplexers
 alias tmux='tmux -2'
 alias screen='TERM=xterm-256color screen'
+
+# directories bit-size
+alias dspace='du -h --max-depth=1'
+alias dfree='df -h'
+
+# handle http servers
+alias pythonServer='python -m SimpleHTTPServer 8000'
+alias rubyServer='ruby -run -ehttpd . -p 8000'
+alias phpServer='php -S 127.0.0.1:8000'
